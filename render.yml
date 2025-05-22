@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: messenger-server
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 10000
